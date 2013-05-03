@@ -14,3 +14,17 @@ I use both tmux and screen.
 On unix environment I use tmux, because I like its pane management and its nice client-server architecture.
 
 On windows (mintty) environment I cannot use tmux, because it's simply not possible. So under mintty I use screen with the same look and feel as in tmux.
+
+Install
+-------
+
+* Clone repo inside ~/etc. You will get a new directory ~/etc/mpx.
+
+* For screen:
+```sh
+ln -s ~/etc/mpx/screenrc ~/.screenrc
+```
+* For tmux:
+```sh
+ln -s ~/etc/mpx/tmux.conf ~/.tmux.conf
+```
