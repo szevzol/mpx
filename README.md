@@ -11,7 +11,11 @@ Description
 
 I use both tmux and screen.
 
-On unix environment I use tmux, because I like its pane management and its nice client-server architecture.
+On unix environment I use tmux, because I like it because it has:
+* pane management
+* more humane readable configuration file compared to screen
+* better manual
+* better scripting possibilities
 
 On windows (mintty) environment I cannot use tmux, because it's simply not possible. So under mintty I use screen with the same look and feel as in tmux.
 
