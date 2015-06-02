@@ -7,5 +7,9 @@ term screen-256color
 defflow auto
 defscrollback 5000
 ignorecase on
+bind c screen 1
+bind ^c screen 1
+bind 0 select 10
+screen 1
 hardstatus alwayslastline
 hardstatus string '%{= g}[%H]%= %{= w}%?%-Lw%?%{r}%{+b}[%{w}%n*%f%t%?(%u)%?%{r}]%{-b}%{w}%?%+Lw%?%?%= %{g}[%D, %Y-%m-%d %c]'
