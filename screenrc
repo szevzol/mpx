@@ -7,9 +7,11 @@ term screen-256color
 defflow auto
 defscrollback 5000
 ignorecase on
-bind c screen 1
-bind ^c screen 1
-bind 0 select 10
-screen 1
 hardstatus alwayslastline
 hardstatus string '%{= g}[%H]%= %{= w}%?%-Lw%?%{r}%{+b}[%{w}%n*%f%t%?(%u)%?%{r}]%{-b}%{w}%?%+Lw%?%?%= %{g}[%D, %Y-%m-%d %c]'
+
+# Change the xterm initialization string from is2=\E[!p\E[?3;4l\E[4l\E>
+# (This fixes the "Aborted because of window size change" konsole symptoms found
+#  in bug #134198)
+# taken from http://superuser.com/a/217281
+termcapinfo xterm* 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
